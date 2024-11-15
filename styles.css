@@ -1,20 +1,92 @@
-body {
-    font-family: Arial, sans-serif;
+/* Basic reset and styling */
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Header styling */
 header {
-    background: #333;
+    background-color: #00274D;
     color: white;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
 }
-section {
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
-a {
-    color: #333;
+
+.header-content p {
+    font-size: 1.2em;
+}
+
+/* Navigation menu styling */
+.top-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #001f3f;
+    padding: 10px 0;
+}
+
+.top-menu a {
+    color: white;
     text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.top-menu a:hover {
+    color: #FFD700;
+}
+
+/* Section styling */
+.section {
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.section h2 {
+    color: #00274D;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Highlights grid */
+.highlight-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.highlight-item {
+    flex: 1 1 30%;
+    padding: 20px;
+    background-color: #F0F4FF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.highlight-item:hover {
+    background-color: #D8E4FF;
+}
+
+/* Contact section */
+#contact {
+    text-align: center;
+    font-size: 1.1em;
 }
